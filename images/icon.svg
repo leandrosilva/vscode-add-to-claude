@@ -1,0 +1,22 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3f3f46"/>
+      <stop offset="1" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdba74"/>
+      <stop offset="0.55" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="url(#bg)"/>
+  <!-- faint file cue -->
+  <path d="M70 44h80l40 40v128a12 12 0 0 1-12 12H70a12 12 0 0 1-12-12V56a12 12 0 0 1 12-12z"
+    fill="#fb923c" opacity="0.12"/>
+  <!-- @ glyph -->
+  <g fill="none" stroke="url(#clay)" stroke-width="18" stroke-linecap="round">
+    <circle cx="128" cy="134" r="26"/>
+    <path d="M154 120v26a18 18 0 0 0 36 0v-12a62 62 0 1 0-24 49"/>
+  </g>
+</svg>

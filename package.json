@@ -1,0 +1,56 @@
+{
+  "name": "add-to-claude",
+  "displayName": "CØdeZØne Add to Claude",
+  "description": "Right-click files or folders in the Explorer to @-mention them in the Claude Code chat — a stand-in for drag-and-drop.",
+  "version": "0.1.0",
+  "publisher": "leandrosilva",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": ["claude", "claude code", "mention", "context", "explorer"],
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandrosilva/vscode-add-to-claude.git"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "addToClaude.add",
+        "title": "Add to Claude Code",
+        "category": "Claude"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "addToClaude.add",
+          "group": "navigation@98"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "addToClaude.add",
+          "when": "resourceScheme == file",
+          "group": "navigation@98"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Add to Claude",
+      "properties": {
+        "addToClaude.autoPaste": {
+          "type": "boolean",
+          "default": true,
+          "description": "After focusing the Claude Code chat, paste the @-mentions into its input. When off, they are only copied to the clipboard."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+*.vsix
+.DS_Store
+.git/**
+.gitignore
+.vscode/**
+.vscodeignore
+images/*.svg
+package.sh
